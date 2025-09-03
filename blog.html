@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.png">
+                </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Certificates & Online Programs For 2021</h1>
+
+        </section>
+
+        <!------------------------ Blog Content ------------------------>
+
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/certificate.jpg">
+                    <h2>Our Certificates & Online Programs For 2021</h2>
+                    <p>In 2021, we expanded our range of certificates and online programs to provide flexible,
+                         accessible learning opportunities for students worldwide. Designed to meet the evolving needs of today’s learners,
+                          our programs cover a variety of fields and skill levels,
+                           allowing individuals to advance their careers or explore new interests from the comfort of their own homes.
+                            With expert instructors, interactive content, and a supportive online community,
+                             our certificates and courses offer a valuable pathway to personal and professional growth in a rapidly changing world.
+                    </p>
+                    <br>
+                    <p>In 2021, we expanded our certificates and online programs to meet the diverse needs of learners worldwide. 
+                        Covering fields from technology and business to arts and health sciences, each program is designed by experts to 
+                        ensure practical, relevant learning. Through interactive lessons and real-world projects, students gain new skills
+                         and improve career prospects without traditional classroom limits. Our commitment to innovation helps learners adapt
+                          to today’s fast-changing job market and achieve their goals from anywhere.
+                  </p>
+                  <br>
+                  <p>In 2021, we expanded our certificates and online programs to offer greater flexibility and access to quality education.
+                     Designed for professionals, students, and lifelong learners, our courses combine expert instruction, 
+                     comprehensive curriculum, and interactive tools for an engaging experience. Using the latest technology, our programs are 
+                     accessible anytime, anywhere, helping students balance their studies with other commitments. This approach empowers 
+                     learners to stay competitive and advance their careers in a rapidly changing global workforce.
+                </p>
+                <br>
+                <p>Throughout 2021, our commitment to expanding educational access led to the launch of numerous new certificates and online
+                     programs tailored to meet the evolving demands of today’s learners. These programs are designed to be flexible and 
+                     self-paced, allowing students to balance their studies with work and personal responsibilities. By integrating the latest
+                      digital tools and interactive learning experiences, we ensure that every participant gains practical skills and knowledge
+                       that can be immediately applied in their careers. Our diverse course offerings empower learners to explore new fields,
+                        enhance their expertise, and stay competitive in a rapidly changing global economy. With a strong focus on quality and 
+                        innovation, our 2021 programs continue to open doors for students worldwide, fostering growth and success in an 
+                        increasingly connected world.
+                    </p>
+
+                    <div class="comment-box">
+                        <h3>Leave a comment</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea rows="5" placeholder="Your comment" ></textarea>
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="blog-right">
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Business Analytics</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Data Science</span>
+                        <span>28</span>
+                    </div>
+                    <div>
+                        <span>Machine Learning</span>
+                        <span>15</span>
+                    </div>
+                    <div>
+                        <span>Computer Science</span>
+                        <span>34</span>
+                    </div> 
+                    <div>
+                        <span>AutoCAD</span>
+                        <span>42</span>
+                    </div>
+                    <div>
+                        <span>Journalism</span>
+                        <span>22</span>
+                    </div>
+                    <div>
+                        <span>Commerce</span>
+                        <span>30</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+
+        <!---------------------------- Footer ---------------------------->
+        <section class="footer">
+             <h4>About Us</h4>
+             <p>We are dedicated to providing quality education in a supportive and inclusive environment. Our experienced faculty and modern facilities help students grow academically and personally, preparing them for future success.</p>
+             <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+             </div>
+             <p>Made With <i class="fa fa-heart-o"></i> by Nada Alaa</p>
+        </section>
+
+
+<!-- Javascript for toggle menu  -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+             function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>

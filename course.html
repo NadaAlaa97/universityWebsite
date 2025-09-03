@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.png">
+                </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Courses</h1>
+
+        </section>
+
+        <!------------------------ Course Content ------------------------>
+        <section class="course">
+            <h1>Courses We Offer</h1>
+            <p>At our university, we offer a diverse selection of courses across various disciplines to support students in achieving their academic and professional goals. Each course is designed to provide a strong foundation of knowledge, practical experience, and critical thinking skills, preparing graduates to excel in their chosen fields.</p>
+
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>Intermediate courses build on basic knowledge and prepare students for advanced study. They help deepen understanding, develop critical skills, and bridge the gap between introductory and specialized topics.</p>
+                </div>
+
+                   <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>A degree represents the successful completion of an undergraduate program, providing students with essential knowledge and skills in their chosen field. It serves as a foundation for professional careers or further academic study.</p>
+                </div>
+
+                   <div class="course-col">
+                    <h3>Post Graduation</h3>
+                    <p>Post graduation involves advanced studies beyond the undergraduate level, allowing students to specialize and gain deeper expertise. It prepares graduates for higher-level roles and research opportunities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------------- facilities ---------------------------->
+          <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>Our campus offers modern facilities designed to support learning, research, and student life. From state-of-the-art labs to comfortable study spaces, we provide everything needed for a productive and enjoyable university experience.</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/library.png">
+                    <h3>World Class Library</h3>
+                    <p>Our world-class library offers extensive collections, digital resources, and quiet study areas to support research and learning. It is a hub for knowledge, innovation, and academic excellence.</p>         
+                </div>
+
+                     <div class="facilities-col">
+                    <img src="images/basketball.png">
+                    <h3>Largest Play Ground</h3>
+                    <p>Our campus features the largest playground, offering ample space for sports, recreation, and outdoor activities.</p>         
+                </div>
+
+                     <div class="facilities-col">
+                    <img src="images/cafeteria.png">
+                    <h3>Tasty And Healthy Food</h3>
+                    <p>We offer delicious and nutritious meals to keep students energized and healthy throughout the day.</p>         
+                </div>
+            </div>
+        </section>
+
+
+        <!---------------------------- Footer ---------------------------->
+        <section class="footer">
+             <h4>About Us</h4>
+             <p>We are dedicated to providing quality education in a supportive and inclusive environment. Our experienced faculty and modern facilities help students grow academically and personally, preparing them for future success.</p>
+             <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+             </div>
+             <p>Made With <i class="fa fa-heart-o"></i> by Nada Alaa</p>
+        </section>
+
+
+<!-- Javascript for toggle menu  -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+             function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>
